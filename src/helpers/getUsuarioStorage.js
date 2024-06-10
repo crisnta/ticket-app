@@ -1,7 +1,7 @@
 
 export const getUsuarioStorage = () => {
   return {
-    agente: localStorage.getItem('agente'),
+    ejecutivo: localStorage.getItem('ejecutivo'),
     escritorio: localStorage.getItem('escritorio'),
   }
 }

@@ -18,7 +18,7 @@ export const Ingresar = () => {
 
     const onFinish = ( {ejecutivo, escritorio} ) => {
 
-        localStorage.setItem('agente', ejecutivo)
+        localStorage.setItem('ejecutivo', ejecutivo)
         localStorage.setItem('escritorio', escritorio)
 
         navigate('/escritorio')
@@ -30,9 +30,9 @@ export const Ingresar = () => {
     };
 
     useEffect(() => {
-      if ( usuario.agente && usuario.escritorio ) return navigate('/escritorio')
+      if ( usuario.ejecutivo && usuario.escritorio ) return navigate('/escritorio')
  
-    }, [usuario.agente, usuario.escritorio, navigate])
+    }, [usuario.ejecutivo, usuario.escritorio, navigate])
     
 
   return (
